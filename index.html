@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+  
+  <h2>Given x1 and x2, Predict y</h2>
+  
+  <form method="POST" action="/">
+    x1:<br>
+    <input type="number" name="x1" value=10>
+    <br><br>
+    x2:<br>
+    <input type="number" name="x2" value=10>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  {% if pred %}
+  <p>The predicted y  is {{ pred }}</p>
+  {% endif %}
+
+  </body>
+</html>
